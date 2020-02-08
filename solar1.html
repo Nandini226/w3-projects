@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Solar System
+<link rel="stylesheet" type="text/css" href="solar11.css"> 
+</title>
+</head>
+<style>
+  body{
+    background-color:black;
+    }
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+    h1{
+      color: #ffffff;
+      text-align : center;
+      header :300px;
+    background-image: url("back.jpg");
+    }
+    .header {
+  padding: 10px;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 30px;
+  }
+  ul{
+    text-align: right;
+    flex-wrap:middle;
+  }
+  .row {
+  display: flex;
+flex-wrap: wrap;
+  padding: 0 4px;
+  align-items: center;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+h2 {
+  position: relative;
+
+  text-align: right top ;
+  
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 20px;
+  
+  }
+  .center { glyph-orientation-horizontal: right;}
+  
+
+</style>
+<body>
+  
+  <div class="header">
+  <h1>Solar System</h1>
+</div>
+
+
+    <!-- The video -->
+    <video autoplay muted loop id="Solar video" >
+      <source src="solar.mp4" type="video/mp4">
+    </video>
+  <img  src="shooting.gif" style="vertical-align: top;">
+    
+  <video class="center" autoplay muted loop id="Solar video" >
+    <source src="shooting.gif" type="video/mp4">
+  </video>
+  <img src="table.png">
+    
+  <h2 text-align="right">
+    
+    The order of the planets in the solar system, starting nearest the sun and
+   working outward is the following Mercury, Venus, Earth, Mars, Jupiter, Saturn,
+    Uranus, Neptune and then the possible Planet Nine.If you insist on including Pluto, it would come after
+    Neptune on the list. Pluto is truly way out there,and on a wildly tilted, elliptical orbit 
+    (two of the several reasons it was demoted).
+     The inner four planets closest to the sun — Mercury, Venus, Earth and Mars — are often called the
+     "terrestrial planets" because their surfaces are rocky. Pluto also has a rocky, albeit frozen, surface 
+     but has never been grouped with the four terrestrials.The four large outer worlds — Jupiter, Saturn,
+      Uranus and Neptune — are sometimes called the Jovian or "Jupiter-like" planets because of their enormous
+       size relative to the terrestrial planets.They're also mostly made of gases like hydrogen, helium and ammonia
+        rather than of rocky surfaces,although astronomers believe some or all of them may have solid cores. Jupiter 
+        and Saturn are sometimes called the gas giants, whereas the more distant Uranus and Neptune have been nicknamed
+         the ice giants.This is because Uranus and Neptune have more atmospheric water and other ice-forming molecules, 
+         such as methane,hydrogen sulfide and phosphene, that crystallize into clouds in the planets' frigid conditions,          according to the Planetary Society. For perspective, methane crystallizes at minus 296 
+     Fahrenheit (minus 183 degrees Celsius), according to the U.S. National Library of Medicine.
+    </h2>
+    <p1 style =" color:blanchedalmond;">Click on the planets to learn more about them</p1>
+    
+  <!--linking of planets-->
+  <div class="row">
+    <div class="column">
+      <a href="venus1.html">Venus<img src="venus.png"></a> 
+        <a href="saturn1.html">Saturn<img src="saturn1.jpg"></a> 
+          <a href="mercury.html"> Mercury<img src="mercury.jpg"></a> 
+      
+    </div>
+    <div class="column">
+      <a href="pluto1.html">Pluto<img src="pluto.jpg"></a> 
+        <a href="neptune1.html">Neptune <img src="neptune.jpg"></a> 
+     <a href="earth1.html">Earth<img src="earth.jpg"></a>     
+    </div>
+    <div class="column">
+      <a href="uranus1.html">Uranus<img src="uranus.jpg"></a> 
+        <a href="mars1.html">Mars<img src="mars.jpg"></a> 
+          <a href="jupiter1.html"> Jupitor<img src="jupiter.jpg"></a> 
+      
+      
+    </div>
+    <div class="column">
+      
+      
+      
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+</body>
+</html>
